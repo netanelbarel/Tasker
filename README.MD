@@ -95,7 +95,7 @@ The service should now be running at `http://localhost:5000`.
 - The service uses UUIDs to identify tasks. UUIDs are globally unique, which makes them ideal for this purpose.
 - The service uses Docker and Docker Compose for deployment. This makes it easy to deploy the service anywhere that Docker is installed.
 - The service runs tasks asynchronously. When a client sends a request to run a task, the service immediately returns a UUID that identifies the task, and the task is run in the background. This allows the service to handle many tasks simultaneously, and ensures that clients don't have to wait for tasks to complete before receiving a response.
-- For the GPT-3 task, I use OpenAI's Python library to interact with their API. Please ensure that you have the necessary API key and it is included in the `.env` file (in this version calling gpt is not working, beacuse the api_key require billing per query).
+- For the GPT-3 task, I use OpenAI's Python library to interact with their API. Please ensure that you have the necessary API key and it is included in the `.env` file (Due to the billing requirement per query associated with the API key, calling "gpt" is not functional in this version.).
 
 ## Future Improvements
 
